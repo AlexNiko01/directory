@@ -1,0 +1,152 @@
+v2.0.14, 25.8.2016
+------------------
+- Update: Updated translations, added new Slovak translations for AIT Special Offers plugin
+
+
+v2.0.13, 21.7.2016
+------------------
+- Update: Updated translations, added new translations for AIT Special Offers plugin
+
+
+v2.0.12, 29.6.2016
+------------------
+- Fix: Wrong url for orders in "My Account" Page
+
+
+v2.0.11, 16.6.2016
+------------------
+- Update: Updated translations with new text strings for all themes and plugins (Turkish, Slovak, Italian, German, French, Swedish, Chinese Simplified, Finnish, Polish, Dutch, Portuguese, Spanish, Chinese Traditional, Portuguese Brazilian)
+
+
+v2.0.10, 13.5.2016
+------------------
+- Fix: Autoload of translated terms via JavaScript on edit term/category page
+- Update: Updated Russian, Spanish, French translations
+
+
+v2.0.9, 26.4.2016
+-----------------
+- Update: Updated translations for all themes and plugins (Turkish, Slovak, Italian, German, French, Swedish, Chinese Simplified, Finnish, Polish, Dutch, Portuguese, Spanish, Chinese Traditional, Portuguese Brazilian)
+
+
+v2.0.8, 14.3.2016
+-----------------
+- Update: Compatibility with WordPress 4.5
+
+
+v2.0.7, 14.3.2016
+-----------------
+- Update: Updated and fixed some translations
+
+
+v2.0.6, 9.2.2016
+-----------------
+- Update: Translations for the new themes Hair and Memorial
+
+
+v2.0.5, 26.1.2016
+-----------------
+- Fix: Error during activation - problem with "self::" when not in class context
+
+
+v2.0.4, 20.1.2016
+-----------------
+- Fix: Clear theme cache on activation and deactivation of the plugin - this resolves untranslated titles of elments in page builder and other text strings affected by caching
+
+
+v2.0.3, 15.12.2015
+------------------
+- Update: Translations for all plugins and all themes were updated
+
+
+v2.0.2, 8.12.2015
+-----------------
+- Fix: Some PHP Notices were displayed in some edge cases
+
+
+v2.0.1, 24.11.2015
+------------------
+- Update: Polylang v1.7.12
+- Update: The language taxonomy is now public for compatibility with WP 4.4
+- Fix: nav menus locations are not correctly populated in customizer in WP 4.4
+- Fix: the termmeta table was still deleted at upgrade
+- Fix: fatal error when using the argument 'post_id' in 'pll_the_languages()' (introduced in 1.7.11)
+- Fix: potential notice in 'pll_the_languages()'
+
+
+v2.0.0, 11.11.2015
+------------------
+- New: This new version of our AIT Languages plugin is re-made as thin wrapper around official Polylang plugin. You will always have all the goodies that the latest Polylang offer and in addition to that we made this new version compatible with WooCommerce  (products can be now translated) and of course you still have all our themes and plugins translated into 26 languages with this plugin.
+
+
+v1.3.8, 8.10.2015
+-----------------
+- Update: Translations for all plugins and all themes were updated
+
+
+v1.3.7, 22.9.2015
+-----------------
+- Fix: You can load your custom theme translations from additional locations, like from child theme or wp-content/languages/ directory. Please consult plugin documentation on www.ait-themes.club for more informations.
+
+
+v1.3.6, 16.9.2015
+-----------------
+- Fix: Problem with saving menus and managing of menu locations in the backend is resolved
+
+
+v1.3.5, 8.9.2015
+----------------
+- Fix: Problem with new WordPress 4.3 and broken Customizer is resolved
+
+
+v1.3.4, 18.8.2015
+-----------------
+- Update: Translations for all plugins and all themes were updated
+
+
+v1.3.3, 4.8.2015
+----------------
+- Update: Translations for plugins and themes were updated
+- New: Translation files for AIT PayPal Subscriptions plugin
+
+
+v1.3.2, 21.7.2015
+-----------------
+- Fix: WooCommerce mini cart (loaded via ajax) didn't load translated texts accordingly to current page language
+- Update: Translations for plugins and themes were updated
+
+
+v1.3.1, 7.7.2015
+-----------------
+- Update: Translations from AIT Quick Comments plugin and AIT Easy Admin plugin are handled by this plugin
+- Update: Updated Turkish translations
+- Update: All other languages were updated too, minor fixes.
+
+
+v1.3.0, 1.7.2015
+-----------------
+- New: All translations from AIT themes and plugins are bundled and handled by this plugin. Thus theme package has smaller size in MB. Just update the AIT Languages plugin and the theme/other plugins and everthing will work as previous.
+- New: Added translations for AIT Updater plugin
+
+
+v1.2.12, 17.6.2015
+----------------
+- Fix: Second fix attempt for GoDaddy
+
+
+v1.2.11, 9.6.2015
+-----------------
+- Update: Reverted GoDaddy fix. It seems it caused more problems then it fixes.
+
+
+v1.2.10, 3.6.2015
+----------------
+- Fix: Attempt to fix the fatal error for users hosted at GoDaddy
+- New:  Added new Ukrainian (uk) translations
+
+
+v1.2.9, 18.5.2015
+-----------------
+- Fix: Warning: reset() expects parameter 1 to be array, null given in admin/admin-filters-columns.php
+- Fix: post.js - tags undefined condition
+

@@ -1,0 +1,83 @@
+v1.16, 06.10.2016
+-----------------
+- Fix: Url page parameter breaks filter results
+
+v1.15, 21.07.2016
+-----------------
+- Fix: Fixed escaped non unicode characters in url
+- Update: Updated filters display, now filters from all items are displayed when pagination is used
+
+v1.14, 11.05.2016
+-----------------
+- Updated: Modified display for filters taxonomy table not showing posts count
+- Updated: Removed row action link to view filter
+
+v1.13, 12.04.2016
+-----------------
+- Update: Updated POT translation files
+
+v1.12, 08.12.2015
+-----------------
+- Added: Alphabetical sorting of filters on frontend
+
+v1.11, 24.11.2015
+-----------------
+- Update: Updated wp-admin taxonomy display
+
+v1.10, 10.11.2015
+----------------
+- Update: Updated pot translation files
+
+
+v1.9, 13.10.2015
+----------------
+- Fix: Issue with some untranslated text strings is resolved (you need to update your theme too)
+
+
+v1.8, 07.07.2015
+-----------------
+- Added: Missing textdomains
+- Update: Updated pot translation files
+
+
+v1.7, 01.07.2015
+-----------------
+- Update: All translations are now handled by AIT Languages plugin
+
+
+v1.6, 09.06.2015
+----------------
+- Update: Updated all translations - translated some new strings
+- New:  Added new Ukrainian (uk) translation
+
+
+v1.5, 26.05.2015
+----------------
+- Updated: Removed custom taxonomies from special pages
+
+
+v1.4, 28.04.2015
+-----------------
+- Added: Translations in 24 languages
+
+
+v1.3, 21.04.2015
+----------------
+- Added: Option to add custom icon to filter
+- Updated: Filters on item taxonomy pages
+- Added: Pot file for translation
+
+
+v1.2, 17.04.2015
+----------------
+- Fixed: Frontend notice when filter removed
+
+
+v1.1, 15.04.2015
+----------------
+- Fixed: Multiple filters bug
+
+
+v1.0, 14.04.2015
+----------------
+- Plugin release

@@ -1,0 +1,35 @@
+v1.6, 06.10.2015
+----------------
+- Fix: error with some configurations
+
+v1.5, 01.10.2015
+----------------
+- Fix: error with some configurations
+
+v1.4, 18.8.2015
+--------------
+- Update: All translations are now handled by AIT Languages plugin
+- Fix: error with long description
+- Fix: cURL library exception
+
+v1.3, 28.4.2015
+---------------
+- Added: New language - Turkish (tr_TR)
+- Updated: All other languages were updated
+
+
+v1.2, 20.4.2015
+---------------
+- Add: Croatian (hr) language
+- Add: Greek (el) language
+- Update: All other languages was updated
+- Fix: Compatiblity with bbPress in some edge cases
+
+
+v1.1, 16.01.2015
+----------------
+- Fixed: missing text domains in translation functions
+
+v1.0, 10.12.2014
+----------------
+- Plugin release

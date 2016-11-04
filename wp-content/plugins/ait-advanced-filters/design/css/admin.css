@@ -1,0 +1,3 @@
+/* ADVANCED FILTERS ADMIN */
+.post-type-ait-item select#ait-items_filters {display: none !important}
+.term-php.taxonomy-ait-items_filters #wp-admin-bar-view {display: none !important}

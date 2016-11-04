@@ -1,0 +1,120 @@
+# Copyright (C) 2016 AitThemes.Club
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AIT Advanced Filters\n"
+"Report-Msgid-Bugs-To: https://system.ait-themes.club/support/\n"
+"POT-Creation-Date: 2016-04-12 11:47:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: ait-advanced-filters.php:132
+msgctxt "taxonomy general name"
+msgid "Advanced Filters"
+msgstr ""
+
+#: ait-advanced-filters.php:133
+msgctxt "taxonomy singular name"
+msgid "Advanced Filter"
+msgstr ""
+
+#: ait-advanced-filters.php:134
+msgid "Search Filters"
+msgstr ""
+
+#: ait-advanced-filters.php:135
+msgid "All Filters"
+msgstr ""
+
+#: ait-advanced-filters.php:136
+msgid "Parent Filter"
+msgstr ""
+
+#: ait-advanced-filters.php:137
+msgid "Parent Filter:"
+msgstr ""
+
+#: ait-advanced-filters.php:138
+msgid "Edit Filter"
+msgstr ""
+
+#: ait-advanced-filters.php:139
+msgid "Update Filter"
+msgstr ""
+
+#: ait-advanced-filters.php:140
+msgid "Add New Filter"
+msgstr ""
+
+#: ait-advanced-filters.php:141
+msgid "New Filter Name"
+msgstr ""
+
+#: ait-advanced-filters.php:142
+msgid "Item Filters"
+msgstr ""
+
+#: ait-advanced-filters.php:185 ait-advanced-filters.php:205
+msgid "Type"
+msgstr ""
+
+#: ait-advanced-filters.php:187 ait-advanced-filters.php:209
+msgid "Checkbox"
+msgstr ""
+
+#: ait-advanced-filters.php:191 ait-advanced-filters.php:215
+msgid "Icon"
+msgstr ""
+
+#: ait-advanced-filters.php:193 ait-advanced-filters.php:219
+msgid "Insert Image"
+msgstr ""
+
+#: ait-advanced-filters.php:193 ait-advanced-filters.php:219
+msgid "Select Image"
+msgstr ""
+
+#: ait-advanced-filters.php:194 ait-advanced-filters.php:220
+msgid "Icon image displayed with filter as feature on Item detail page"
+msgstr ""
+
+#: ait-advanced-filters.php:257 config/theme-options.php:6
+#: templates/advanced-filters.php:37
+msgid "Advanced Filters"
+msgstr ""
+
+#: config/ait-item-filters-options.metabox.php:5
+msgid "Filters"
+msgstr ""
+
+#: config/ait-item-filters-options.metabox.php:15
+msgid "Assign filters to Item"
+msgstr ""
+
+#: config/theme-options.php:9
+msgid "Enabled"
+msgstr ""
+
+#: config/theme-options.php:14
+msgid "Filter Columns"
+msgstr ""
+
+#: config/theme-options.php:23
+msgid "Number of columns displayed on frontend"
+msgstr ""
+
+#: templates/advanced-filters.php:59
+msgid "Unsupported filter"
+msgstr ""
+
+#: templates/advanced-filters.php:69
+msgid "Filter"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds advanced content filtering for CityGuide theme"
+msgstr ""
