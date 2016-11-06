@@ -308,19 +308,19 @@ function search_markers()
     global $wp_query;
     global $query_string;
     $tax = array('relation' => 'AND');
-    if(!empty($_REQUEST['category'])){
+    if (!empty($_REQUEST['category'])) {
         $tax[] = array(
-                'taxonomy' => 'ait-items',
-                'field'    => 'term_id',
-                'terms' => $_REQUEST['category'],
-            );
+            'taxonomy' => 'ait-items',
+            'field' => 'term_id',
+            'terms' => $_REQUEST['category'],
+        );
     }
-    if(!empty($_REQUEST['location'])){
+    if (!empty($_REQUEST['location'])) {
         $tax[] = array(
-                'taxonomy' => 'ait-locations',
-                'field'    => 'term_id',
-                'terms' => $_REQUEST['location'],
-            );
+            'taxonomy' => 'ait-locations',
+            'field' => 'term_id',
+            'terms' => $_REQUEST['location'],
+        );
     }
     $itemsArgs = array(
         'post_type' => 'ait-item',
@@ -347,7 +347,7 @@ function search_markers()
     );
 
 
-    if(!empty($_REQUEST['s'])){
+    if (!empty($_REQUEST['s'])) {
         $itemsArgs['s'] = $_REQUEST['s'];
     }
 
@@ -372,9 +372,11 @@ function search_markers()
 //    echo json_encode($_REQUEST);
     die;
 }
-add_shortcode('reviews_rating','reviews_rating');
 
-function reviews_rating(){
+add_shortcode('reviews_rating', 'reviews_rating');
+
+function reviews_rating()
+{
     $posts = new WP_Query(
         array(
             'post_type' => 'ait-item',
@@ -387,14 +389,18 @@ function reviews_rating(){
         )
     );
     ob_start();
-    foreach($posts->posts as $post){
+    foreach ($posts->posts as $post) {
         ?>
         <div class="review-stars-container">
             <div class="content" itemscope itemtype="http://schema.org/AggregateRating">
-                <span class="review-stars" data-score="<?php echo get_post_meta($post->ID, "rating_mean", true); ?>"></span>
-                <span  itemprop="itemReviewed"><a href="<?php echo get_permalink($post->ID); ?>"> <?php echo $post->post_title;?></a></span>
-                <span style="display: none" itemprop="ratingValue"><?php echo get_post_meta($post->ID, "rating_mean", true); ?></span>
-                <span style="display: none" itemprop="ratingCount"><?php echo AitItemReviews::getRatingCount($post->id);?></span>
+                <span class="review-stars"
+                      data-score="<?php echo get_post_meta($post->ID, "rating_mean", true); ?>"></span>
+                <span itemprop="itemReviewed"><a
+                        href="<?php echo get_permalink($post->ID); ?>"> <?php echo $post->post_title; ?></a></span>
+                <span style="display: none"
+                      itemprop="ratingValue"><?php echo get_post_meta($post->ID, "rating_mean", true); ?></span>
+                <span style="display: none"
+                      itemprop="ratingCount"><?php echo AitItemReviews::getRatingCount($post->id); ?></span>
             </div>
         </div>
         <?php
@@ -411,9 +417,9 @@ function reviews_rating(){
 //    }
 //    return $link;
 //}
-//
+
 //add_filter('post_type_link','item_permalink_loc',9999,2);
-//
+
 //function item_permalink_loc_redirect(){
 //    $site_url = get_site_url();
 //    $wp_web_dir = preg_replace('#https?://.*?/#si', '/', $site_url);
@@ -429,7 +435,37 @@ function reviews_rating(){
 //        flush_rewrite_rules();
 //    }
 //}
-//
+
 //add_action('init', 'item_permalink_loc_redirect');
 
+
+
+
+function item_permalink_loc($link,$post){
+    if($post->post_type == 'ait-item'){
+        $location = wp_get_post_terms($post->ID,'ait-locations');
+        $category = wp_get_post_terms($post->ID,'ait-items');
+        $location_link = end($location);
+        $category_link = end($category);
+        return str_replace('/item/',"/{$location_link->slug}/{$category_link->slug}/",$link);
+    }
+    return $link;
+}
+
+add_filter('post_type_link','item_permalink_loc',9999,2);
+
+function my_flush_rules(){
+    $rules = get_option( 'rewrite_rules' );
+
+    if ( ! isset( $rules['(project)/(\d*)$'] ) ) {
+        global $wp_rewrite;
+        $wp_rewrite->flush_rules();
+    }
+}
+
+function addRoutes() {
+    add_rewrite_rule( '/([^/]*)/([^/]*)/([^/]*)/$', 'index.php/item/$3/', 'top' );
+    my_flush_rules();
+}
+add_action('init', 'addRoutes');
 
